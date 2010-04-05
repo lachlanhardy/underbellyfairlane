@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'haml'
-require 'smoke'
+# require 'smoke'
 require 'pp'
 require 'lib/rack/trailingslash'
 require 'lib/rack/catch_redirect'
