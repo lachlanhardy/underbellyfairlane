@@ -1,0 +1,51 @@
+Phase 1 and 2 would illustrate my point, but 3 makes it actually useful.
+
+Phase 1
+ - Populate profile from web - http://socialgraph-resources.googlecode.com/svn/trunk/samples/exploreapi.html
+
+Phase 2
+ - Find networks and offer association
+  - authenticate Twitter (not necessary if verified by ze Google)
+  - authenticate Flickr (not necessary if verified by ze Google)
+ - Find contacts and offer connection
+
+Phase 3 
+- Allow checkin to sessions and events
+- associate tweets and photos with sessions based on time
+- Show content associated with sessions and speakers
+ - eg app/speakers/lisa-herrod/ shows the tweets and photos from her session
+ - same with app/sessions/the-open-web
+
+Phase 4
+  - Set up tweeting from within app
+    - view tweets
+    - send tweets
+    - reply to tweets
+  - Set up flickr within app
+    - view photos
+    - comment on photos
+
+Phase 5
+ - FireEagle ??
+ - Bookmarks
+  - associated commenting.
+
+Phase 6
+ - utilize alien technology
+
+Tasks to be done before launch, in priority order:
+ - confirm parity between desktop and iphone
+ - review whole site and QA
+ - get feedback from Lisa
+
+Others things to do, in priority order:
+
+ - GZIP
+ - iPhone version
+ - Generic mobile site
+ - add google sitemap
+ - CI
+ - Pass YSlow/Page Speed
+ - add webfinger http://groups.google.com/group/webfinger/browse_thread/thread/dd568ba740f515c0
+ - Set up post-commit hook action for redeploy
+ - Make error page cooler
