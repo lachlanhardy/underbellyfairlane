@@ -28,8 +28,8 @@ article, aside, footer, header, nav, section {display: block;}
 
 /****
 Application
-http://stock
-20100116
+http://underbelly-fairlane.heroku.com
+20100303
 
 TOC
 =Generic Rules
@@ -45,19 +45,9 @@ TOC
   =Page
     =Columns
     =Components
-      =Archive
-      =Posts
-      =Blog
-      =Facets
-      =Tags
-      =Tagspace
-      =Tagged
-      =hcard-Lachlan-Hardy
   =Footer
 =JS
-  =Github
-  =Flickr-pic
-  =Graph
+
 
 ****/
 
@@ -104,7 +94,7 @@ TOC
     article ul ol,
     article ul ul {margin: 0 0 0.5em 1em;}
 
-  .amp {background: #0e0e0e; color: #666; font: italic 100 1.25em Baskerville, "Goudy Old Style", "Palatino", Georgia, "Book Antiqua", serif; position: relative; top: 2px;}
+  .amp {background: #fff; color: #666; font: italic 100 1.25em Baskerville, "Goudy Old Style", "Palatino", Georgia, "Book Antiqua", serif; position: relative; top: 2px;}
 
   /* =Dates, Times etc */
   .date {font: 1em/1.6 Georgia, serif;}
@@ -122,45 +112,41 @@ TOC
 html,
 body {height: 100%;}
 
-body {background: #fff; color: #0e0e0e; font: 62.5%/1.3 "Helvetica Neue", Helvetica, Arial, FreeSans, sans-serif; margin: 0; padding: 0;}
+body {background: #0e0e0e; color: #fff; font: 62.5%/1.3 "Helvetica Neue", Helvetica, Arial, FreeSans, sans-serif; margin: 0; padding: 0;}
 
 #wrapper {min-height: 100%; overflow: hidden;}
 
   /* =Header */
-  header.layout {background: #f30; color: #fff; min-height: 5em; margin: 0 0 2.8em 0; padding: 0.2em 1em 0 1em; position: relative;}
-    header.layout h1 {background: transparent; color: #fff; font-size: 6em; left: -0.25em; letter-spacing: -0.05em; margin: 0; position: absolute; text-transform: uppercase; top: -0.2em; width: auto;}
-    header.layout h1 span,
-    header.layout h1 a {padding: 0.1em 0.2em 0;}
-    header.layout h1 a:link,
-    header.layout h1 a:visited {background: transparent; color: #fff; text-decoration: none;}
-    header.layout h1 a:hover,
-    header.layout h1 a:active,
-    header.layout h1 a:focus {background: #fff; color: #f30;}
+  header.layout {margin: 0 0 2.8em 0;}
+    header.layout img {float: left; margin: 0 0 2em 0; width: auto;}
+    header.layout h1 {float: left; font-size: 6em; letter-spacing: 0.05em; margin: 0; padding: 0.5em 0 0 0.5em; width: auto;}
 
   /* =Nav */
   nav {overflow: auto;}
-    nav ul {background: #000; color: #f30; float: left; width: auto;}
+    nav ul {background: #fff; color: #f30; float: left; width: auto;}
       nav ul li {float: left; width: auto;}
         nav ul li a,
         nav ul li span {display: block; font-size: 1.4em; font-weight: 700; padding: 0.5em 1.1em; position:relative; z-index:1;}
-        nav ul li span {background: #000; color: #ddd;}
+        nav ul li span {background: #fff; color: #ddd;}
         nav ul li a:link,
-        nav ul li a:visited {background: #000; color: #fff;}
+        nav ul li a:visited {background: #fff; color: #0e0e0e;}
         nav ul li a:hover,
         nav ul li a:active,
-        nav ul li a:focus {background: #f30; color: #fff; text-decoration: none;}
+        nav ul li a:focus {background: #f30; color: #0e0e0e; text-decoration: none;}
   
   /* =Page */
   #page {font-size: 1.5em; padding: 1em; position: relative;}
 
     /* =Columns */    
     section {float: left; margin: 0 0 -80em 1em; min-height: 100%; padding: 1em 0 90em 1em; position: relative; width: auto;}
+    
+    #gallery ul li {float: left; margin: 0 1em 1em 0; width: auto;}
 
   /* =Footer */
-  footer.layout {background: #111; clear: both; color: #fff; font-size: 1.5em; margin: -2.4em 0 0 0; position: relative; bottom: 0; text-align: center; width: 100%;}
+  footer.layout {background: #111; clear: both; color: #0e0e0e; font-size: 1.5em; margin: -2.4em 0 0 0; position: relative; bottom: 0; text-align: center; width: 100%;}
     footer.layout p {border-top: 2px solid #444; padding: 0.5em;}
       footer.layout a:link {color: #0066B3;}
-      footer.layout a:visited {color: #fff;}
+      footer.layout a:visited {color: #0e0e0e;}
       footer.layout a:hover, 
       footer.layout a:active, 
       footer.layout a:focus {color: #f30;}
