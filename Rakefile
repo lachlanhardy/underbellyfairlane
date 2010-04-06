@@ -49,7 +49,7 @@ namespace :minifier do
   end
   
   def combine(folder_path, file_type)
-    cmd = "java -jar lib/combiner-0.0.1.jar -o #{folder_path}/production/combined.#{file_type} #{folder_path}*.#{file_type}"
+    cmd = "java -jar lib/combiner-0.0.1.jar -v -o #{folder_path}/production/combined.#{file_type} #{folder_path}*.#{file_type}"
     puts cmd
     ret = system(cmd)
   end

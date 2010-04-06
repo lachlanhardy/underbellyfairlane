@@ -1,4 +1,4 @@
-/*requires jquery.js*/
+/*requires shadowbox.js*/
 
 $(document).ready(function(){
   // making sexy unobtrusive CSS possible since 2006
