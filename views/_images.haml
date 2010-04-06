@@ -1,0 +1,4 @@
+%li
+  - path = "http://farm#{image[:farm]}.static.flickr.com/#{image[:server]}/#{image[:id]}_#{image[:secret]}"
+  %a{:href => "#{path}_b.jpg"}
+    %img{:src => "#{path}_m.jpg"}

@@ -1,16 +1,9 @@
 - @title = "1968 ZB Ford Fairlane"
 
+%section#blurb
+  %p <a href="http://imcdb.org/vehicle_218208-Ford-Fairlane-ZB-1968.html">As seen on Underbelly</a>. Contact Lachlan on 04 0709 1518 or <a href="mailto:lachlan+fairlane@lachstock.com.au">lachlan@lachstock.com.au</a>.
+
 %section#gallery
   %ul
-    %li
-      %a{:href => 'http://farm4.static.flickr.com/3475/3753931619_dd45834064_b.jpg'}
-        %img{:src => "http://farm4.static.flickr.com/3475/3753931619_dd45834064_m.jpg"}
-    %li
-      %a{:href => 'http://farm3.static.flickr.com/2665/3753929527_c2488442f6_b.jpg'}
-        %img{:src => "http://farm3.static.flickr.com/2665/3753929527_c2488442f6_m.jpg"}
-    %li
-      %a{:href => 'http://farm3.static.flickr.com/2532/3753927837_1483d69bcf_b.jpg'}
-        %img{:src => "http://farm3.static.flickr.com/2532/3753927837_1483d69bcf_m.jpg"}
-    %li
-      %a{:href => 'http://farm3.static.flickr.com/2594/3754733526_f89f933f92_b.jpg'}
-        %img{:src => "http://farm3.static.flickr.com/2594/3754733526_f89f933f92_m.jpg"}
+    - for image in @photos
+      = partial :images, :image => image

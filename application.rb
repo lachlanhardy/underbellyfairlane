@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'haml'
-# require 'smoke'
+require 'smoke'
 require 'pp'
 require 'lib/rack/trailingslash'
 require 'lib/rack/catch_redirect'
@@ -43,7 +43,15 @@ module Application
 
     # homepage
     get '/' do
-      
+      Smoke.yql(:flickr) do
+        select :all
+        from "flickr.photos.search(20)"
+        where :user_id, "98983159@N00"
+        where :machine_tags, 'thefairlane:photo='
+
+        path :query, :results, :photo
+      end
+      @photos = Smoke[:flickr].output.reverse
       deliver :index
     end
 
